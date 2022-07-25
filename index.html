@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador 2</title>
+
+   <!--css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/iconoe.jpg"
+</head>
+
+<body>
+    <header>
+        <a href="#inicio" aria-label="Ir a la seccion inicio" class="logo">
+            <img src="https://www.eidosglobal.org/images/logo/eidoslogo.png" alt="Logo de Eidos">
+        </a>
+
+<!--menu mobile-->
+        <button id="menu-button">
+            <img src="img/bars-solid.svg" id="open-menu">
+            <img src="img/x-solid.svg" id="close-menu">
+        </button>
+
+
+        <nav>
+            <ul id="menu-principal">
+                <li class="menu-item active">
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+
+
+    <main>
+         <!---Inicio-->
+        <section id="inicio">
+            <figure>
+                <img id="perfil" src="img/foto_de_perfil.jpg" alt="foto de perfil">
+            </figure>
+
+            <article class="presentacion">
+                <h1>Hola! Soy Julieta Bellido</h1>
+
+                <p>
+                    Soy estudiantes del profesorado de Ingles, actualmente me encuentro cursando el 4to año, y trabajo dando clases a niños y adolescentes. Hace unos meses comennce a incursionar en Programacion Web, porque me llamo la atencion la creacion de aplicaciones. Lo que mas disfruto hacer en mi tiempo libre es dar largos paseos en bicicleta y pasar tiempo con mi perrito y amigas.
+                </p>
+
+                <a href="CvBellidoPaulaJulieta.pdf" aria-label="Descargar CV" class="botoncv">Descarga mi Cv</a>
+            </article>
+        </section>
+
+        <!---Contacto-->
+        <section id="contacto">
+            <article class="hablemos">
+                <h2>Hablemos!</h2>
+                <p>Si quieres me puedes contactar por mail o visitando mis perfiles de Linkedin o GitHub por cualquier consulta. Aqui te dejo mis redes de contacto</p>
+            </article>
+
+            <ul id="contacto-links">
+                <li>
+                    <a href="mailto:julietabellidoedu@gmail.com" target="_blank" aria-label="Envia un mail">
+                        <img src="img/mail.png" class="icono-contacto">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/bellidopau" target="_blank" aria-label="Ir al perfil de Github">
+                        <img src="img/github.png" class="icono-contacto">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/julieta-bellido-73589a1b9" target="_blank" aria-label="Ir al perfil de Linkedin">
+                        <img src="img/linkedin.png" class="icono-contacto">
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+    </main>
+
+    <footer> 
+      <small> Codigo Latam</small>
+    </footer>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
