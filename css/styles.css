@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@200;400&display=swap');
-* { font-family:'Lato', sans-serif;
-    font-family: 'Poppins', sans-serif;
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,6 +7,7 @@
 }
 
 body{
+    font-family:'Poppins', sans-serif;
     font-size: 18px;
     line-height: 1.2;
     background-color: #fbfbfb;
@@ -27,8 +27,8 @@ a {
 a.botoncv{
     background-color: #af599e;
     color: #fbfbfb;
-    padding: 10px, 16px;
-    border-radius: 20px;
+    padding: 12px 20px;
+    border-radius: 50px;
     font-size: 20px;
     display: inline-block;
 }
@@ -48,12 +48,14 @@ h2 {
 p {
     margin: 16px 0;
 }
+
+
 /*responsive*/
-img{
+img {
     max-width: 100%;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,11 +68,10 @@ header{
     left: 0;
     box-shadow: 0 3px 10px -5px #5f5f5f;
 }
-#menu-boton {
+#menu-button {
     background: transparent;
     border: 0;
     outline: 0;
-    font-size: 26px;
     width: 40px;
     height: 40px;
 }
@@ -83,6 +84,7 @@ img#close-menu {
     width: 120px;
 }
 
+/*menu-navegacion*/
 
 nav {
     display: none;
@@ -97,22 +99,20 @@ li.menu-item a {
     padding: 16px;
     display: inline-block;
 }
-li.menu-item:hover {
+
+/*estilos para el menu-item.active*/
+
+li.menu-item:hover,
+li.menu-item.active {
     background: rgba(175, 89, 158, 0.3);
     transition: background-color 0.3s;
-    color: #fbfbfb;
-}
-/*menu mobile*/
 
-#menu-boton {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: 0;
-    outline: 0;
 }
+/*estilos menu mobile*/
+
 body.mobile-menu-active {
-	overflow: hidden;}
+	overflow: hidden;
+}
 
 body.mobile-menu-active img#close-menu {
 	display: block;
@@ -141,7 +141,7 @@ body.mobile-menu-active ul#menu-principal {
 }
 
 
-
+/* main */
 main {
     max-width: 1200px;
     margin: auto;
@@ -155,11 +155,7 @@ section {
     min-height: 100vh;
     padding-top: 120px;
 }
-#perfil{
-    width: 300px;
-    border-radius: 100%;
-    max-width: 100%;
-}
+
 
 
 /* Inicio */
@@ -168,7 +164,7 @@ section#inicio {
     flex-direction: column;
 }
 
-figure.presentacion-img {
+figure.presentacion-img{
     margin-bottom: 20px;
 }
 
@@ -215,7 +211,7 @@ img.icono-contacto {
     width: 80px;
 }
 
-
+/* Footer */
 
 footer {
     height: 90px;
@@ -226,9 +222,8 @@ footer {
     color: #fbfbfb;
 }
 
-
-@media (min-widht:1024px){
-}
+/* desktop */
+@media (min-widht:1024px) {
 
 h1{
     font-size: 48px;
@@ -250,6 +245,7 @@ article.presentacion {
 ul#contacto-links li {
     margin: 32px;
 }
+/* menu-mobile */
 #menu-button {
     display: none;
 }
@@ -269,3 +265,8 @@ body.mobile-menu-active header {
 	body.mobile-menu-active ul#menu {
 		flex-direction: row;
 	}
+body.mobile-menu-active{
+    overflow: auto;
+}
+
+}
