@@ -214,6 +214,7 @@ img.icono-contacto {
 /* Footer */
 
 footer {
+    
     height: 90px;
     display: flex;
     justify-content: center;
@@ -223,50 +224,57 @@ footer {
 }
 
 /* desktop */
-@media (min-widht:1024px) {
 
-h1{
-    font-size: 48px;
-    text-align: left;
-}
+@media (min-width: 1024px){
+    section#inicio {
+        flex-direction: row;
+    }
 
-h2 {
-    font-size: 32px;
-}
+    h1 { font-size: 48px;
+        text-align: left;
+    }
 
-section#inicio {
-    flex-direction: row;
-}
+    h2 {
+         font-size: 32x;
+    }
 
-article.presentacion {
-    width: 50%;
-}
+    article.presentacion {
+        width: 50%;
+    }
 
-ul#contacto-links li {
-    margin: 32px;
-}
-/* menu-mobile */
-#menu-button {
-    display: none;
-}
+    ul#contacto-links li {
+        margin: 32px;
+    }
 
-nav {
-    display: block;
-}
-body.mobile-menu-active header {
-		height: 90px;
-		align-items: center;
-	}
-	body.mobile-menu-active nav {
-		height: auto;
-		width: auto;
-	}
+    #menu-button {
+        display: none;
+    }
+    
+    nav {
+        display: block;
+    }
 
-	body.mobile-menu-active ul#menu {
-		flex-direction: row;
-	}
-body.mobile-menu-active{
-    overflow: auto;
-}
+    body.mobile-menu-active header {
+        height: 90px;
+        align-items: center;
+    }
+
+    body.mobile-menu-active nav {
+        height: auto;
+        width: auto;
+    }
+
+    body.mobile-menu-active ul#menu-principal {
+        flex-direction: row ;
+    }
+    body.mobile-menu-active {
+        overflow: auto;
+    }
+
+
+
+
+
+
 
 }
