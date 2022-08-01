@@ -25,7 +25,7 @@ a {
 }
 
 a.botoncv{
-    background-color: #af599e;
+    background-color: #be9a4a;
     color: #fbfbfb;
     padding: 12px 20px;
     border-radius: 50px;
@@ -33,7 +33,7 @@ a.botoncv{
     display: inline-block;
 }
 a.botoncv:hover{
-    background-color: rgba(175, 89, 158, 0.8);
+    background-color: rgba(224, 161, 77, 0.8);
     transition: background-color 0.3s;
 
 }
@@ -66,7 +66,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 3px 10px -5px #5f5f5f;
+    box-shadow: 0 3px 10px -5px #e2b887;
 }
 #menu-button {
     background: transparent;
@@ -104,7 +104,7 @@ li.menu-item a {
 
 li.menu-item:hover,
 li.menu-item.active {
-    background: rgba(175, 89, 158, 0.3);
+    background: rgba(204, 132, 24, 0.3);
     transition: background-color 0.3s;
 
 }
@@ -185,7 +185,7 @@ section#contacto p {
 }
 
 article.hablemos {
-    background: rgba(175, 89, 158, 0.3);
+    background: rgba(221, 170, 59, 0.63);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -203,7 +203,7 @@ ul#contacto-links li {
 }
 
 ul#contacto-links li:hover {
-    background: rgba(175, 89, 158, 0.3);
+    background: rgba(214, 152, 58, 0.3);
     transition: background-color 0.3s;
 }
 
@@ -219,7 +219,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #af599e;
+    background-color: #693d0b;
     color: #fbfbfb;
 }
 
